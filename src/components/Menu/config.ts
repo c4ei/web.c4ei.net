@@ -153,7 +153,7 @@ const config: MenuEntry[] = [
     label: 'Gitbook',
     icon: gitbookBlack,
     iconActive: gitbookWhite,
-    href: 'https://app.gitbook.com/@sixnetwork/s/definix/',
+    href: 'https://sixnetwork.gitbook.io/definix',
     notHighlight: true,
     newTab: true,
   },
