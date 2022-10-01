@@ -37,30 +37,30 @@ export const WBNB_ADDRESS = {
   [ChainId.BSCTESTNET]: process.env.REACT_APP_WBNB_ADDRESS_TESTNET || ''
 }
 
-export const BTCB_ADDRESS = {
-  [ChainId.MAINNET]: process.env.REACT_APP_BTCB_ADDRESS_MAINNET || '',
-  [ChainId.BSCTESTNET]: process.env.REACT_APP_BTCB_ADDRESS_TESTNET || ''
-}
+// export const BTCB_ADDRESS = {
+//   [ChainId.MAINNET]: process.env.REACT_APP_BTCB_ADDRESS_MAINNET || '',
+//   [ChainId.BSCTESTNET]: process.env.REACT_APP_BTCB_ADDRESS_TESTNET || ''
+// }
 
-export const ETH_ADDRESS = {
-  [ChainId.MAINNET]: process.env.REACT_APP_ETH_ADDRESS_MAINNET || '',
-  [ChainId.BSCTESTNET]: process.env.REACT_APP_ETH_ADDRESS_TESTNET || ''
-}
+// export const ETH_ADDRESS = {
+//   [ChainId.MAINNET]: process.env.REACT_APP_ETH_ADDRESS_MAINNET || '',
+//   [ChainId.BSCTESTNET]: process.env.REACT_APP_ETH_ADDRESS_TESTNET || ''
+// }
 
-export const XRP_ADDRESS = {
-  [ChainId.MAINNET]: process.env.REACT_APP_XRP_ADDRESS_MAINNET || '',
-  [ChainId.BSCTESTNET]: process.env.REACT_APP_XRP_ADDRESS_TESTNET || ''
-}
+// export const XRP_ADDRESS = {
+//   [ChainId.MAINNET]: process.env.REACT_APP_XRP_ADDRESS_MAINNET || '',
+//   [ChainId.BSCTESTNET]: process.env.REACT_APP_XRP_ADDRESS_TESTNET || ''
+// }
 
-export const ADA_ADDRESS = {
-  [ChainId.MAINNET]: process.env.REACT_APP_ADA_ADDRESS_MAINNET || '',
-  [ChainId.BSCTESTNET]: process.env.REACT_APP_ADA_ADDRESS_TESTNET || ''
-}
+// export const ADA_ADDRESS = {
+//   [ChainId.MAINNET]: process.env.REACT_APP_ADA_ADDRESS_MAINNET || '',
+//   [ChainId.BSCTESTNET]: process.env.REACT_APP_ADA_ADDRESS_TESTNET || ''
+// }
 
-export const VELO_ADDRESS = {
-  [ChainId.MAINNET]: process.env.REACT_APP_VELO_ADDRESS_MAINNET || '',
-  [ChainId.BSCTESTNET]: process.env.REACT_APP_VELO_ADDRESS_TESTNET || ''
-}
+// export const VELO_ADDRESS = {
+//   [ChainId.MAINNET]: process.env.REACT_APP_VELO_ADDRESS_MAINNET || '',
+//   [ChainId.BSCTESTNET]: process.env.REACT_APP_VELO_ADDRESS_TESTNET || ''
+// }
 
 export const FST_INV_LP = {
   [ChainId.MAINNET]: process.env.REACT_APP_FST_INV_LP_MAINNET || '',

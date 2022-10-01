@@ -32,7 +32,7 @@ describe('Remove Liquidity', () => {
   })
 
   it('token not in storage is loaded', () => {
-    cy.visit('/remove/0x7083609fce4d1d8dc0c979aab8c869ea2c873402-0x2170ed0880ac9a755fd29b2688956bd959f933f8')
+    cy.visit('/remove/0x7083609fce4d1d8dc0c979aab8c869ea2c873402-0x9F046aC552B3071E7A17C6EB69104F74262F028f')
     cy.get('#remove-liquidity-tokena-symbol').should('contain.text', 'DOT')
     cy.get('#remove-liquidity-tokenb-symbol').should('contain.text', 'ETH')
   })
