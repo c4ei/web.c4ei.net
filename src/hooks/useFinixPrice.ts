@@ -4,13 +4,13 @@ import { useActiveWeb3React } from './index'
 import multicall from '../utils/multicall'
 import {
   multicallAdress,
-  FINIX_SIX_LP,
-  FINIX_BUSD_LP,
-  FINIX_BNB_LP,
-  SIX_BUSD_LP,
+  FST_INV_LP,
+  FST_BUSD_LP,
+  FST_BNB_LP,
+  INV_BUSD_LP,
   PANCAKE_BNB_BUSD_LP,
-  FINIX_ADDRESS,
-  SIX_ADDRESS,
+  FST_ADDRESS,
+  INV_ADDRESS,
   WBNB_ADDRESS,
   BUSD_ADDRESS,
   HERODOTUS_ADDRESS,
@@ -61,34 +61,35 @@ const getTotalBalanceLp = async (input) => {
 export default function useFinixPrice(): number {
   const [currentPrice, setCurrentPrice] = useState(0)
   const { account, chainId = process.env.REACT_APP_CHAIN_ID || '' } = useActiveWeb3React()
-  const multicallContractAddress = multicallAdress[chainId || process.env.REACT_APP_CHAIN_ID || '56']
+  // const multicallContractAddress = multicallAdress[chainId || process.env.REACT_APP_CHAIN_ID || '56']
+  const multicallContractAddress = multicallAdress[chainId || process.env.REACT_APP_CHAIN_ID || '21004']
   useEffect(() => {
     console.log(account)
     const fetchPromise = [
       getTotalBalanceLp({
-        lpAddress: FINIX_SIX_LP[chainId],
-        pair1: FINIX_ADDRESS[chainId],
-        pair2: SIX_ADDRESS[chainId],
+        lpAddress: FST_INV_LP[chainId],
+        pair1: FST_ADDRESS[chainId],
+        pair2: INV_ADDRESS[chainId],
         masterChefAddress: HERODOTUS_ADDRESS[chainId],
         multicallAddress: multicallContractAddress
       }),
       getTotalBalanceLp({
-        lpAddress: FINIX_BUSD_LP[chainId],
-        pair1: FINIX_ADDRESS[chainId],
+        lpAddress: FST_BUSD_LP[chainId],
+        pair1: FST_ADDRESS[chainId],
         pair2: BUSD_ADDRESS[chainId],
         masterChefAddress: HERODOTUS_ADDRESS[chainId],
         multicallAddress: multicallContractAddress
       }),
       getTotalBalanceLp({
-        lpAddress: FINIX_BNB_LP[chainId],
-        pair1: FINIX_ADDRESS[chainId],
+        lpAddress: FST_BNB_LP[chainId],
+        pair1: FST_ADDRESS[chainId],
         pair2: WBNB_ADDRESS[chainId],
         masterChefAddress: HERODOTUS_ADDRESS[chainId],
         multicallAddress: multicallContractAddress
       }),
       getTotalBalanceLp({
-        lpAddress: SIX_BUSD_LP[chainId],
-        pair1: SIX_ADDRESS[chainId],
+        lpAddress: INV_BUSD_LP[chainId],
+        pair1: INV_ADDRESS[chainId],
         pair2: BUSD_ADDRESS[chainId],
         masterChefAddress: HERODOTUS_ADDRESS[chainId],
         multicallAddress: multicallContractAddress
@@ -112,15 +113,15 @@ export default function useFinixPrice(): number {
       // const totalFinixDefinixFinixSixPair = 10000000.0
       // const totalSixDefinixFinixSixPair = 12820512.82
       const finixSixRatio = totalSixDefinixFinixSixPair / totalFinixDefinixFinixSixPair || 0
-      // FINIX-BUSD
+      // FST-BUSD
       // const totalFinixDefinixFinixBusdPair = 10000000.0
       // const totalBusdDefinixFinixBusdPair = 500000.0
       const finixBusdRatio = totalBusdDefinixFinixBusdPair / totalFinixDefinixFinixBusdPair || 0
-      // FINIX-BNB
+      // FST-BNB
       // const totalFinixDefinixFinixBnbPair = 10000000.0
       // const totalBnbDefinixFinixBnbPair = 1824.82
       const finixBnbRatio = totalBnbDefinixFinixBnbPair / totalFinixDefinixFinixBnbPair || 0
-      // SIX-BUSD
+      // INV-BUSD
       // const totalSixDefinixSixBusdPair = 12820512.82
       // const totalBnbDefinixSixBusdPair = 500000.0
       const sixBusdRatio = totalBnbDefinixSixBusdPair / totalSixDefinixSixBusdPair || 0
@@ -137,26 +138,26 @@ export default function useFinixPrice(): number {
           finixSixPrice * totalFinixDefinixFinixSixPair) /
         (totalFinixDefinixFinixBusdPair + totalFinixDefinixFinixBnbPair + totalFinixDefinixFinixSixPair)
 
-      // console.log('FINIX-SIX LP Address : ', getFinixSixLPAddress())
-      // console.log('FINIX Address : ', getFinixAddress())
-      // console.log('Total FINIX in FINIX-SIX pair : ', totalFinixDefinixFinixSixPair)
-      // console.log('SIX Address : ', getSixAddress())
-      // console.log('Total SIX in FINIX-SIX pair : ', totalSixDefinixFinixSixPair)
-      // console.log('FINIX-BUSD LP Address : ', getFinixBusdLPAddress())
-      // console.log('FINIX Address : ', getFinixAddress())
-      // console.log('Total FINIX in FINIX-BUSD pair : ', totalFinixDefinixFinixBusdPair)
+      // console.log('FST-INV LP Address : ', getFinixSixLPAddress())
+      // console.log('FST Address : ', getFinixAddress())
+      // console.log('Total FST in FST-INV pair : ', totalFinixDefinixFinixSixPair)
+      // console.log('INV Address : ', getSixAddress())
+      // console.log('Total INV in FST-INV pair : ', totalSixDefinixFinixSixPair)
+      // console.log('FST-BUSD LP Address : ', getFinixBusdLPAddress())
+      // console.log('FST Address : ', getFinixAddress())
+      // console.log('Total FST in FST-BUSD pair : ', totalFinixDefinixFinixBusdPair)
       // console.log('BUSD Address : ', getBusdAddress())
-      // console.log('Total BUSD in FINIX-BUSD pair : ', totalBusdDefinixFinixBusdPair)
-      // console.log('FINIX-WBNB LP Address : ', getFinixBnbLPAddress())
-      // console.log('FINIX Address : ', getFinixAddress())
-      // console.log('Total FINIX in FINIX-WBNB pair : ', totalFinixDefinixFinixBnbPair)
+      // console.log('Total BUSD in FST-BUSD pair : ', totalBusdDefinixFinixBusdPair)
+      // console.log('FST-WBNB LP Address : ', getFinixBnbLPAddress())
+      // console.log('FST Address : ', getFinixAddress())
+      // console.log('Total FST in FST-WBNB pair : ', totalFinixDefinixFinixBnbPair)
       // console.log('WBNB Address : ', getWbnbAddress())
-      // console.log('Total WBNB in FINIX-WBNB pair : ', totalBnbDefinixFinixBnbPair)
-      // console.log('SIX-BUSD LP Address : ', getSixBusdLPAddress())
-      // console.log('SIX Address : ', getSixAddress())
-      // console.log('Total SIX in SIX-BUSD pair : ', totalSixDefinixSixBusdPair)
+      // console.log('Total WBNB in FST-WBNB pair : ', totalBnbDefinixFinixBnbPair)
+      // console.log('INV-BUSD LP Address : ', getSixBusdLPAddress())
+      // console.log('INV Address : ', getSixAddress())
+      // console.log('Total INV in INV-BUSD pair : ', totalSixDefinixSixBusdPair)
       // console.log('BUSD Address : ', getBusdAddress())
-      // console.log('Total BUSD in SIX-BUSD pair : ', totalBnbDefinixSixBusdPair)
+      // console.log('Total BUSD in INV-BUSD pair : ', totalBnbDefinixSixBusdPair)
       // console.log('Definix BNB-BUSD LP Address : ', getDefinixBnbBusdLPAddress())
       // console.log('WBNB Address : ', getWbnbAddress())
       // console.log('Total WBNB in Definix BNB-BUSD pair : ', totalBnbInDefinixBnbBusdPair)

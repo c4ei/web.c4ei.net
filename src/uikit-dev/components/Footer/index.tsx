@@ -9,7 +9,7 @@ import React from 'react'
 import styled from 'styled-components'
 import certikWhite from '../../images/Audit/certik-white.png'
 import certik from '../../images/Audit/certik.png'
-import six from '../../images/Footer-Icon/Powered-by-SIX.png'
+import six from '../../images/Footer-Icon/Powered-by-INV.png'
 import sixWhite from '../../images/Footer-Icon/definix-logo-25.png'
 import facebookWhite from '../../images/for-ui-v2/footer/facebook-white.png'
 import facebook from '../../images/for-ui-v2/footer/facebook.png'
@@ -122,7 +122,7 @@ function Footer() {
       imgDarkMode: twitterWhite,
     },
     {
-      url: 'https://t.me/SIXNetwork',
+      url: 'https://t.me/INVNetwork',
       img: telegram,
       imgDarkMode: telegramWhite,
     },

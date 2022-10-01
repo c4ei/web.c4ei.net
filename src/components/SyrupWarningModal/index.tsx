@@ -50,8 +50,8 @@ export default function SyrupWarningModal({
               </Text>
               <Text color="failure">
                 {transactionType === 'Buying'
-                  ? 'You will not receive FINIX rewards for holding purchased SYRUP.'
-                  : 'You will need to buy back the same amount of SYRUP to be able to convert back to FINIX.'}
+                  ? 'You will not receive FST rewards for holding purchased SYRUP.'
+                  : 'You will need to buy back the same amount of SYRUP to be able to convert back to FST.'}
               </Text>
             </>
           )}

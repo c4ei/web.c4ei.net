@@ -13,7 +13,7 @@ import { AppDispatch, AppState } from '../index'
 import { useCurrencyBalances } from '../wallet/hooks'
 import { Field, replaceSwapState, selectCurrency, setRecipient, switchCurrencies, typeInput } from './actions'
 import { SwapState } from './reducer'
-import { SIX_ADDRESS } from '../../constants'
+import { INV_ADDRESS } from '../../constants'
 
 import { useUserSlippageTolerance } from '../user/hooks'
 import { computeSlippageAdjustedAmounts } from '../../utils/prices'
@@ -206,7 +206,7 @@ function parseCurrencyFromURLParameter(urlParam: any, chainId: any): string {
     if (urlParam.toUpperCase() === 'ETH') return 'ETH'
     if (valid === false) return 'ETH'
   }
-  return SIX_ADDRESS[chainId] ?? ''
+  return INV_ADDRESS[chainId] ?? ''
 }
 
 function parseTokenAmountURLParameter(urlParam: any): string {
@@ -259,8 +259,9 @@ export function queryParametersToSwapState(parsedQs: ParsedQs, chainId: any): Sw
 export function useDefaultsFromURLSearch():
   | { inputCurrencyId: string | undefined; outputCurrencyId: string | undefined }
   | undefined {
-  const { chainId = process.env.REACT_APP_CHAIN_ID || '56' } = useActiveWeb3React()
-  const dispatch = useDispatch<AppDispatch>()
+    // const { chainId = process.env.REACT_APP_CHAIN_ID || '56' } = useActiveWeb3React()
+    const { chainId = process.env.REACT_APP_CHAIN_ID || '21004' } = useActiveWeb3React()
+    const dispatch = useDispatch<AppDispatch>()
   const parsedQs = useParsedQueryString()
   const [result, setResult] = useState<
     { inputCurrencyId: string | undefined; outputCurrencyId: string | undefined } | undefined

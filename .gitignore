@@ -37,3 +37,6 @@ cypress/screenshots
 cypress/fixtures/example.json
 
 .eslintcache
+
+sol/
+0_221001.txt

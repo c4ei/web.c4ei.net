@@ -129,7 +129,7 @@ const PanelBody: React.FC<Props> = (props) => {
     )
   }
 
-  const addressFinix = '0x0f02b1f5af54e04fb6dd6550f009ac2429c4e30d'
+  const addressFinix = '0xAd34e8b694bf46993Df557f531A8BE9C565d3B36'
   const addressEllipsis = addressFinix
     ? `${addressFinix.substring(0, 6)}...${addressFinix.substring(addressFinix.length - 4)}`
     : null
@@ -156,7 +156,7 @@ const PanelBody: React.FC<Props> = (props) => {
         <StyledDark>
           <img src={FinixCoin} alt="FinixCoin" width="22" />
           <Text className="pl-1" color="text" fontSize="14px">
-            FINIX
+            FST
           </Text>
           <Text className="px-1" fontSize="14px">
             {addressEllipsis}
@@ -167,7 +167,7 @@ const PanelBody: React.FC<Props> = (props) => {
         <StyleLight>
           <img src={FinixCoin} alt="FinixCoin" width="22" />
           <Text className="pl-1" color="text" fontSize="14px">
-            FINIX
+            FST
           </Text>
           <Text className="px-1" fontSize="14px">
             {addressEllipsis}

@@ -258,12 +258,12 @@ const Menu: React.FC<NavProps> = ({
 
         <Flex alignItems="center">
           <Price
-            href="https://swap.arken.finance/tokens/bsc/0x0f02b1f5af54e04fb6dd6550f009ac2429c4e30d?res=15"
+            href="https://swap.arken.finance/tokens/bsc/0xAd34e8b694bf46993Df557f531A8BE9C565d3B36?res=15"
             target="_blank"
           >
             <img src={FinixCoin} alt="" />
             <p>
-              <span>FINIX : </span>
+              <span>FST : </span>
               <strong>${(price || 0) <= 0 ? 'N/A' : numeral(price).format('0,0.0000')}</strong>
             </p>
           </Price>
@@ -304,14 +304,14 @@ const Menu: React.FC<NavProps> = ({
 
             {/* <CountDownBanner
               logo={finixCoin}
-              title="FINIX-BSC Address : "
-              detail="0x0f02b1f5af54e04fb6dd6550f009ac2429c4e30d"
+              title="FST-BSC Address : "
+              detail="0xAd34e8b694bf46993Df557f531A8BE9C565d3B36"
               disableCountdown
               button={
                 <CopyToClipboard
                   color="warning"
                   noText
-                  toCopy="0x0f02b1f5af54e04fb6dd6550f009ac2429c4e30d"
+                  toCopy="0xAd34e8b694bf46993Df557f531A8BE9C565d3B36"
                   tooltipPos="right"
                 />
               }
