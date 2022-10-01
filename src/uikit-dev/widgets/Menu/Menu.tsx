@@ -258,7 +258,7 @@ const Menu: React.FC<NavProps> = ({
 
         <Flex alignItems="center">
           <Price
-            href="https://swap.arken.finance/tokens/bsc/0xAd34e8b694bf46993Df557f531A8BE9C565d3B36?res=15"
+            href="https://swap.arken.finance/tokens/bsc/0xfF65236bf69A2fDCFCac57BCb49D4ae45dC08773?res=15"
             target="_blank"
           >
             <img src={FinixCoin} alt="" />
@@ -305,13 +305,13 @@ const Menu: React.FC<NavProps> = ({
             {/* <CountDownBanner
               logo={finixCoin}
               title="FST-BSC Address : "
-              detail="0xAd34e8b694bf46993Df557f531A8BE9C565d3B36"
+              detail="0xfF65236bf69A2fDCFCac57BCb49D4ae45dC08773"
               disableCountdown
               button={
                 <CopyToClipboard
                   color="warning"
                   noText
-                  toCopy="0xAd34e8b694bf46993Df557f531A8BE9C565d3B36"
+                  toCopy="0xfF65236bf69A2fDCFCac57BCb49D4ae45dC08773"
                   tooltipPos="right"
                 />
               }

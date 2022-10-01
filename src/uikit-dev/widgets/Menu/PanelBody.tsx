@@ -129,7 +129,7 @@ const PanelBody: React.FC<Props> = (props) => {
     )
   }
 
-  const addressFinix = '0xAd34e8b694bf46993Df557f531A8BE9C565d3B36'
+  const addressFinix = '0xfF65236bf69A2fDCFCac57BCb49D4ae45dC08773'
   const addressEllipsis = addressFinix
     ? `${addressFinix.substring(0, 6)}...${addressFinix.substring(addressFinix.length - 4)}`
     : null
