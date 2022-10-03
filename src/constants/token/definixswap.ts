@@ -122,14 +122,14 @@ export default {
     //   decimals: 18,
     //   logoURI: '/images/coins/BTCB.png',
     // },
-    // {
-    //   name: 'ETH Token',
-    //   symbol: 'ETH',
-    //   address: process.env.REACT_APP_ETH_ADDRESS_MAINNET,
-    //   chainId: 56,
-    //   decimals: 18,
-    //   logoURI: '/images/coins/ETH.png',
-    // },
+    {
+      name: 'ETH Token',
+      symbol: 'ETH',
+      address: process.env.REACT_APP_ETH_ADDRESS_MAINNET,
+      chainId: 21004,
+      decimals: 18,
+      logoURI: '/images/coins/ETH.png',
+    },
     // {
     //   name: 'XRP Token',
     //   symbol: 'XRP',

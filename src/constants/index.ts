@@ -42,10 +42,10 @@ export const WBNB_ADDRESS = {
 //   [ChainId.BSCTESTNET]: process.env.REACT_APP_BTCB_ADDRESS_TESTNET || ''
 // }
 
-// export const ETH_ADDRESS = {
-//   [ChainId.MAINNET]: process.env.REACT_APP_ETH_ADDRESS_MAINNET || '',
-//   [ChainId.BSCTESTNET]: process.env.REACT_APP_ETH_ADDRESS_TESTNET || ''
-// }
+export const ETH_ADDRESS = {
+  [ChainId.MAINNET]: process.env.REACT_APP_ETH_ADDRESS_MAINNET || '',
+  [ChainId.BSCTESTNET]: process.env.REACT_APP_ETH_ADDRESS_TESTNET || ''
+}
 
 // export const XRP_ADDRESS = {
 //   [ChainId.MAINNET]: process.env.REACT_APP_XRP_ADDRESS_MAINNET || '',
@@ -125,10 +125,10 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
     new Token(ChainId.BSCTESTNET, INV_ADDRESS[ChainId.BSCTESTNET], 18, 'INV', 'INV Token'),
     new Token(ChainId.BSCTESTNET, FST_ADDRESS[ChainId.BSCTESTNET], 18, 'FST', 'FST Token'),
     new Token(ChainId.BSCTESTNET, BUSD_ADDRESS[ChainId.BSCTESTNET], 18, 'BUSD', 'BUSD Token'),
-    // new Token(ChainId.BSCTESTNET, USDT_ADDRESS[ChainId.BSCTESTNET], 18, 'USDT', 'USDT Token'),
+    new Token(ChainId.BSCTESTNET, USDT_ADDRESS[ChainId.BSCTESTNET], 18, 'USDT', 'USDT Token'),
     new Token(ChainId.BSCTESTNET, WBNB_ADDRESS[ChainId.BSCTESTNET], 18, 'WBNB', 'Wrapped BNB'),
     // new Token(ChainId.BSCTESTNET, BTCB_ADDRESS[ChainId.BSCTESTNET], 18, 'BTCB', 'BTCB Token'),
-    // new Token(ChainId.BSCTESTNET, ETH_ADDRESS[ChainId.BSCTESTNET], 18, 'ETH', 'ETH Token'),
+    new Token(ChainId.BSCTESTNET, ETH_ADDRESS[ChainId.BSCTESTNET], 18, 'ETH', 'ETH Token'),
     // new Token(ChainId.BSCTESTNET, XRP_ADDRESS[ChainId.BSCTESTNET], 18, 'XRP', 'XRP Token'),
     // new Token(ChainId.BSCTESTNET, ADA_ADDRESS[ChainId.BSCTESTNET], 18, 'ADA', 'ADA Token'),
     // new Token(ChainId.BSCTESTNET, VELO_ADDRESS[ChainId.BSCTESTNET], 18, 'VELO', 'VELO Token')
@@ -138,10 +138,10 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
     new Token(ChainId.MAINNET, INV_ADDRESS[ChainId.MAINNET], 18, 'INV', 'INV Token'),
     new Token(ChainId.MAINNET, FST_ADDRESS[ChainId.MAINNET], 18, 'FST', 'FST Token'),
     new Token(ChainId.MAINNET, BUSD_ADDRESS[ChainId.MAINNET], 18, 'BUSD', 'BUSD Token'),
-    // new Token(ChainId.MAINNET, USDT_ADDRESS[ChainId.MAINNET], 18, 'USDT', 'USDT Token'),
+    new Token(ChainId.MAINNET, USDT_ADDRESS[ChainId.MAINNET], 18, 'USDT', 'USDT Token'),
     new Token(ChainId.MAINNET, WBNB_ADDRESS[ChainId.MAINNET], 18, 'WBNB', 'Wrapped BNB'),
     // new Token(ChainId.MAINNET, BTCB_ADDRESS[ChainId.MAINNET], 18, 'BTCB', 'BTCB Token'),
-    // new Token(ChainId.MAINNET, ETH_ADDRESS[ChainId.MAINNET], 18, 'ETH', 'ETH Token'),
+    new Token(ChainId.MAINNET, ETH_ADDRESS[ChainId.MAINNET], 18, 'ETH', 'ETH Token'),
     // new Token(ChainId.MAINNET, XRP_ADDRESS[ChainId.MAINNET], 18, 'XRP', 'XRP Token'),
     // new Token(ChainId.MAINNET, ADA_ADDRESS[ChainId.MAINNET], 18, 'ADA', 'ADA Token'),
     // new Token(ChainId.MAINNET, VELO_ADDRESS[ChainId.MAINNET], 5, 'VELO', 'VELO Token'),
