@@ -1,7 +1,8 @@
 
 /**
 https://bscscan.com/address/0x6b51E8FDc32Ead0B837deb334fcB79E24F3b105A#code
-Contract Name: Herodotus
+C_2_2_GHcasher.sol --> owner : C_2_2_GHcasher.sol
+Contract Name: Herodotus --> GHcasher
 Compiler Version: v0.6.12+commit.27d51765
 Optimization Enabled: Yes with 9999 runs
 Other Settings: default evmVersion, MIT license
@@ -11,7 +12,7 @@ contract address :
 -----Decoded View---------------
 Arg [0] : _house (address): 0x0f02b1f5af54e04fb6dd6550f009ac2429c4e30d
 Arg [1] : _flame (address): 0xfaaa404735f33cdab5eae2fddfd375b92399853f
-Arg [2] : _devaddr (address): 0xd0094ad85a65c1bf8097f2e4067041e32f009874
+Arg [2] : _devaddr (address): 0x6245e28Fe45B543c1F93e65c0997114d4Ba0F39c
 Arg [3] : _housePerBlock (uint256): 1000000000000000
 Arg [4] : _startBlock (uint256): 6332827
 
@@ -1529,7 +1530,7 @@ interface IMigratorChef {
     function migrate(IBEP20 token) external returns (IBEP20);
 }
 
-contract Herodotus is Ownable {
+contract GHcasher is Ownable {
     using SafeMath for uint256;
     using SafeBEP20 for IBEP20;
 
